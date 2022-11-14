@@ -1,0 +1,235 @@
+.container {
+  height: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+.movieScreen {
+  height: 448px;
+  object-fit: contain;
+  color: white;
+  position: relative;
+}
+.movie__content {
+  position: absolute;
+  height: 200px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  left: 40px;
+  right: 40px;
+}
+.movie__content > h1 {
+  max-height: 80px;
+  overflow: hidden;
+}
+.movie__info {
+  max-width: 900px;
+  margin: 13px 0px;
+  text-align: start;
+  height: 97px;
+  line-height: 25px;
+  overflow: hidden;
+}
+.movie__playTrailer,
+.movie__closeButton {
+  padding: 10px 20px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: red;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: all 0.2s ease-in;
+}
+
+.movie__playTrailer:hover,
+.movie__closeButton:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.03);
+}
+.movie__shading {
+  background-color: rgba(0, 0, 0, 0.3);
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.4) 20%,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  height: 448px;
+  z-index: 2;
+}
+
+.movie__trailer {
+  height: 448px;
+  position: relative;
+}
+
+.youtube {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.movie__closeButton {
+  margin-top: 10px;
+}
+
+.movie__extraInfo {
+  color: white;
+}
+.movie__genres {
+  color: white;
+}
+.movie__availableOn {
+  color: white;
+}
+.movie__extraInfo {
+  display: flex;
+  justify-content: space-evenly;
+}
+.movie__tmdbRating {
+  margin: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.movie__raing_icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.movie__genres {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 10px;
+  margin-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.398);
+  overflow-x: scroll;
+}
+
+.movie__genres > span {
+  font-size: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px white solid;
+  border-radius: 30px;
+  max-height: 15px;
+  padding-top: 0;
+  padding: 4px 20px 14px;
+  font-weight: 600;
+  outline: none;
+  min-width: 85px;
+  /* max-width: 120px; */
+  /* width: 100%; */
+  text-align: center;
+  line-height: 25px;
+  /* white-space: nowrap; */
+  overflow: hidden;
+  /* text-overflow: ellipsis; */
+}
+.movie__genres > span:hover {
+  background-color: rgba(34, 188, 185, 0.68);
+  border: none;
+}
+
+.movie__availableOn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* height: 100%; */
+  border-bottom: 2px solid rgba(255, 255, 255, 0.398);
+  /* margin: 25px 10px 0px; */
+  /* padding-bottom: 20px; */
+  padding: 30px 10px;
+  overflow-x: scroll;
+}
+.movie__availableOn > img {
+  height: 20px;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: all 0.1s ease-in;
+}
+.movie__availableOn > img:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.45);
+  transform: scale(0.97);
+}
+
+.movie__producedBy,
+.movie__creators {
+  color: white;
+  display: flex;
+  padding: 30px 10px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.398);
+  align-items: center;
+  gap: 20px;
+  overflow-x: scroll;
+}
+.movie__producedBy::-webkit-scrollbar,
+.movie__creators::-webkit-scrollbar,
+.movie__availableOn::-webkit-scrollbar,
+.movie__genres::-webkit-scrollbar,.container > h2::-webkit-scrollbar{
+  display: none;
+}
+.movie__producedBy > img {
+  height: 40px;
+  background-color: white;
+  padding: 3px;
+  max-width: 150px;
+  object-fit: contain;
+  border-radius: 3px;
+}
+.movie__creators > h3,
+.movie__producedBy > h3 {
+  color: #19d250;
+}
+
+.movie__producedBy > h3{
+  height: 40px; 
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+
+.container > h2{
+  margin-left: 10px;
+  color: white;
+  overflow-x: scroll;
+  width: auto;
+  white-space: nowrap;
+  padding: 30px 10px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.398)
+}
+.container > h2 > span{
+  color: #19d250;
+  margin-left: 20px;
+}
+
+@media (min-width: 900px) {
+  .movie__trailer,
+  .movieScreen,
+  .movie__shading {
+    height: 600px;
+  }
+}
+@media (min-width: 1200px) {
+  .movie__trailer,
+  .movieScreen,
+  .movie__shading {
+    height: 750px;
+  }
+}
+@media (min-width: 1650px) {
+  .movie__trailer,
+  .movieScreen,
+  .movie__shading {
+    height: 820px;
+  }
+}

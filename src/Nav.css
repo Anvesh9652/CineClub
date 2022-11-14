@@ -1,0 +1,51 @@
+.nav {
+  position: fixed;
+  top: 0;
+  padding: 10px;
+  width: 100%;
+  height: 40px;
+  z-index: 1;
+
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+}
+
+.nav__contents {
+  padding: 0;
+  margin-top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__black {
+  background-color: #111;
+}
+.nav__contents h1{
+  color: rgb(84, 178, 112);
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.nav__logo {
+  position: fixed;
+  margin-top: 4px;
+  /* margin-top: -9px; */
+  left: 70px;
+  width: 100px;
+  object-fit: contain;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.nav__avatar {
+  /* margin-top: -9px; */
+  position: fixed;
+  cursor: pointer;
+  right: 20px;
+  width: 35px;
+  border-radius: 20px;
+}
+
+
