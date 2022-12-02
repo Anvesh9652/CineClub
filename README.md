@@ -1,6 +1,6 @@
-# if previous link is not working try the link below
+### if previous link is not working try the link below
 
-[Preview](https://cineclub-aea28.firebaseapp.com/)
+### Website Link [cineClub](https://cineclub-aea28.firebaseapp.com/)
 
 # Getting Started with Create React App and Redux
 
